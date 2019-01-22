@@ -1,0 +1,46 @@
+body {
+	background-color: #282828;
+	max-width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px;
+
+	.video-item {
+		margin-bottom: 30px;
+		min-width: 330px;
+	}
+}
+
+iframe {
+	display: block;
+	margin-bottom: 10px;
+	border: 2px solid black;
+	
+	&.isPlaying {
+		border-color: lighten(darkgreen, 10%);
+	}
+}
+
+button {
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	border: 2px solid black;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	margin-right: 5px;
+	
+	&.play {
+		background: darkgreen;
+		&:hover {
+			background: lighten(darkgreen, 10%);
+		}
+	}
+	&.stop {
+		background: darkred;
+		&:hover {
+			background: lighten(darkred, 10%);
+		}
+	}
+}

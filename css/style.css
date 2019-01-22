@@ -1,0 +1,43 @@
+body {
+  background-color: #282828;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+body .video-item {
+  margin-bottom: 30px;
+  min-width: 330px;
+}
+
+iframe {
+  display: block;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
+iframe.isPlaying {
+  border-color: #009700;
+}
+
+button {
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid black;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-right: 5px;
+}
+button.play {
+  background: darkgreen;
+}
+button.play:hover {
+  background: #009700;
+}
+button.stop {
+  background: darkred;
+}
+button.stop:hover {
+  background: #be0000;
+}
